@@ -6,6 +6,7 @@ const navbar = <nav>
         <li>Menu</li>
         <li>About</li>
         <li>Contact</li>
+        <li>About Us</li>
     </ul>
 </nav>;
 
