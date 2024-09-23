@@ -2,21 +2,28 @@
 // ReactDOM.render(<p>Hello, React</p>, document.querySelector('#root')); 
 
 const navbar = <nav>
-<ul>
-    <li>Menu</li>
-    <li>About</li>
-    <li>Contact</li>
-</ul>
+    <ul>
+        <li>Menu</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>About Us</li>
+    </ul>
 </nav>;
 
-ReactDOM.createRoot(document.querySelector('#root')).render(navbar);
+// ReactDOM.createRoot(document.querySelector('#root')).render(navbar);
+const root = ReactDOM.createRoot(document.querySelector('#root'));
+root.render(navbar);
 
-    const h1 = document.createElement('h1');
-    h1.textContent = 'Hello, everyone';
-    document.getElementById('root').appendChild(h1);
-    console.log(h1);
-    
-
-    const element = <h6>Some JSX element.</h6>
-    console.log(element);
-    
+const page = (
+    <div>
+        <h1>Hello, everyone</h1>
+        <h2>Fun fact about React</h2>
+        <ul>
+            <li><h6>React is a library</h6></li>
+            <li>React is used for building user interfaces</li>
+            <li>React is used for building user interfaces</li>
+        </ul>
+        <img src="./react-logo.jpeg" width="100px;" ></img>
+    </div>
+);
+ReactDOM.render(page, document.getElementById('pageContainer'));
